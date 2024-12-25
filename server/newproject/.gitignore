@@ -1,0 +1,74 @@
+# Python-specific ignores
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.log
+*.pot
+
+# Virtual environments
+venv/
+env/
+ENV/
+*.env
+*.venv
+
+# Django-related ignores
+db.sqlite3
+/media/
+*.db
+*.sqlite3
+
+# Static files and uploads
+/staticfiles/
+/static/
+node_modules/
+
+# Local settings
+settings_local.py
+.env
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Byte-compiled or cache directories
+*.egg
+*.egg-info/
+.eggs/
+*.bak
+*.tmp
+*.old
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+.cache
+
+# Testing and CI tools
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+
+# Build and distribution files
+dist/
+build/
+*.tar.gz
+*.zip
+*.egg-info
+
+# Pipenv, Poetry, and other package managers
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# PyCharm specific
+*.iml

@@ -1,0 +1,104 @@
+:root {
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  --color-light: #213547;
+  --color-dark: rgba(39, 39, 39, 0.87);
+  --bg-light: #ffffff;
+  --bg-dark: #242424;
+
+  --button-bg: #04726e;
+  --button-bg-hover: #7f0c6e;
+  --button-text: white;
+  --button-border: #ccc;
+  --input-border: #ccc;
+  --input-focus-border: #04726e;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  color: var(--color-dark);
+  background-color: var(--bg-dark);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--color-light);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--button-border);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-bg-hover);
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  width: 200px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 5px var(--input-focus-border);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.book-item p {
+  margin: 0.5rem 0;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--color-light);
+    background-color: var(--bg-light);
+  }
+
+  button {
+    background-color: var(--button-border);
+    color: var(--color-light);
+  }
+}
